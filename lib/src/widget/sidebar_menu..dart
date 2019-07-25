@@ -38,7 +38,7 @@ class _SideBarMenuState extends State<SideBarMenu> with SingleTickerProviderStat
             color: drawerBgColor,
           ),
           width: _animation.value,
-          child: new Column(
+          child: Column(
             mainAxisAlignment: MainAxisAlignment.center,
             crossAxisAlignment: CrossAxisAlignment.center,
             children: <Widget>[

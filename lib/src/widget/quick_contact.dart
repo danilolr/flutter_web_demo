@@ -29,8 +29,8 @@ class QuickContact extends StatelessWidget {
             content: Text("Your Message has been sent."),
             actions: <Widget>[
               // usually buttons at the bottom of the dialog
-              new FlatButton(
-                child: new Text("Close"),
+              FlatButton(
+                child: Text("Close"),
                 onPressed: () {
                   Navigator.of(context).pop();
                 },
@@ -74,12 +74,9 @@ class QuickContact extends StatelessWidget {
                       hintText: 'Your name',
                       fillColor: Colors.white,
                       filled: true,
-                      contentPadding:
-                          EdgeInsets.fromLTRB(10.0, 10.0, 20.0, 10.0),
+                      contentPadding: EdgeInsets.fromLTRB(10.0, 10.0, 20.0, 10.0),
                       enabledBorder: OutlineInputBorder(
-                          borderRadius: BorderRadius.circular(5.0),
-                          borderSide:
-                              BorderSide(color: Colors.white, width: 0.0))),
+                          borderRadius: BorderRadius.circular(5.0), borderSide: BorderSide(color: Colors.white, width: 0.0))),
                 ),
               ),
               SizedBox(height: 20),
@@ -96,12 +93,9 @@ class QuickContact extends StatelessWidget {
                       hintText: 'Your E-mail',
                       fillColor: Colors.white,
                       filled: true,
-                      contentPadding:
-                          EdgeInsets.fromLTRB(10.0, 10.0, 20.0, 10.0),
+                      contentPadding: EdgeInsets.fromLTRB(10.0, 10.0, 20.0, 10.0),
                       enabledBorder: OutlineInputBorder(
-                          borderRadius: BorderRadius.circular(5.0),
-                          borderSide:
-                              BorderSide(color: Colors.white, width: 0.0))),
+                          borderRadius: BorderRadius.circular(5.0), borderSide: BorderSide(color: Colors.white, width: 0.0))),
                 ),
               ),
               SizedBox(height: 20),
@@ -118,12 +112,9 @@ class QuickContact extends StatelessWidget {
                       hintText: 'Your Subject',
                       fillColor: Colors.white,
                       filled: true,
-                      contentPadding:
-                          EdgeInsets.fromLTRB(10.0, 10.0, 20.0, 10.0),
+                      contentPadding: EdgeInsets.fromLTRB(10.0, 10.0, 20.0, 10.0),
                       enabledBorder: OutlineInputBorder(
-                          borderRadius: BorderRadius.circular(5.0),
-                          borderSide:
-                              BorderSide(color: Colors.white, width: 0.0))),
+                          borderRadius: BorderRadius.circular(5.0), borderSide: BorderSide(color: Colors.white, width: 0.0))),
                 ),
               ),
               SizedBox(height: 20),

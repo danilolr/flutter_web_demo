@@ -12,7 +12,13 @@ class MyApp extends StatelessWidget {
   // This widget is the root of your application.
   @override
   Widget build(BuildContext context) {
-    ui.platformViewRegistry.registerViewFactory('hello-world-html', (int viewId) => DivElement()..text = 'Hello, World');
+    ui.platformViewRegistry.registerViewFactory(
+        'hello-world-html',
+        (int viewId) => IFrameElement()
+          ..width = '640'
+          ..height = '360'
+          ..src = 'https://www.youtube.com/embed/IyFZznAk69U'
+          ..style.border = 'none');
     return BlocProvider(
       blocs: [Bloc((i) => MenuBloc())],
       child: MaterialApp(

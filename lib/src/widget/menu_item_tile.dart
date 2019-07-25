@@ -20,7 +20,7 @@ class MenuItemTile extends StatefulWidget {
   }) : super(key: key);
 
   @override
-  _MenuItemTileState createState() => new _MenuItemTileState();
+  _MenuItemTileState createState() => _MenuItemTileState();
 }
 
 class _MenuItemTileState extends State<MenuItemTile> {

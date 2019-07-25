@@ -56,7 +56,7 @@ class MainPage extends StatelessWidget {
                           return ConsultaAtendimentoPage();
                         }
                         if (snapshot.data == 2) {
-                          return new ConsultaIndividualPage();
+                          return ConsultaIndividualPage();
                         }
                         return Container(width: double.infinity, height: double.infinity, color: Colors.black);
                       }),

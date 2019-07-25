@@ -15,30 +15,7 @@ class ConsultaIndividualPage extends StatelessWidget {
           flex: 1,
           child: Container(
             color: Colors.green,
-            child: ListView.builder(
-              itemCount: 200,
-              itemBuilder: (BuildContext context, int index) {
-                return Flexible(
-                  child: Flex(
-                    direction: Axis.horizontal,
-                    children: <Widget>[
-                      Expanded(
-                        child: Text("Abc"),
-                        flex: 1,
-                      ),
-                      Expanded(
-                        child: Text("Dddd"),
-                        flex: 5,
-                      ),
-                      Expanded(
-                        child: Text("777"),
-                        flex: 1,
-                      ),
-                    ],
-                  ),
-                );
-              },
-            ),
+            child: HtmlView(viewType: 'hello-world-html'),
           ),
         )
       ],
